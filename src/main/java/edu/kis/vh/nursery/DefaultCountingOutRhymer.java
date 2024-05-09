@@ -4,7 +4,7 @@ public class DefaultCountingOutRhymer {
 
     public static final int FALSE = -1;
     public static final int TABLE_SIZE = 12;
-    private int[] numbers = new int[TABLE_SIZE];
+    private final int[] numbers = new int[TABLE_SIZE];
 
     public int total = FALSE;
 
