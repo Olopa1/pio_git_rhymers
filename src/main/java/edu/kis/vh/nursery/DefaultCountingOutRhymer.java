@@ -2,14 +2,18 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    public static final int START_VALUE = -1;
-    public static final int TABLE_SIZE = 12;
-    public static final int LAST_INDEX = TABLE_SIZE - 1;
-    public static final int IF_EMPTY =-1;
+    private static final int START_VALUE = -1;
+    private static final int TABLE_SIZE = 12;
+    private static final int LAST_INDEX = TABLE_SIZE - 1;
+    private static final int IF_EMPTY =-1;
     private final int[] numbers = new int[TABLE_SIZE];
-    public int total = START_VALUE;
+    private int total = START_VALUE;
 
-    public void countIn(int in) {
+    public int getTotal() {
+		return total;
+	}
+
+	public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
     }
@@ -33,5 +37,21 @@ public class DefaultCountingOutRhymer {
             return IF_EMPTY;
         return numbers[total--];
     }
+
+	public static int getStartValue() {
+		return START_VALUE;
+	}
+
+	public static int getTableSize() {
+		return TABLE_SIZE;
+	}
+
+	public static int getLastIndex() {
+		return LAST_INDEX;
+	}
+
+	public static int getIfEmpty() {
+		return IF_EMPTY;
+	}
 
 }
