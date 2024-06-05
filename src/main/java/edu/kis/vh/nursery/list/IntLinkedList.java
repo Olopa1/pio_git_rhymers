@@ -1,7 +1,15 @@
 package edu.kis.vh.nursery.list;
 
-public class IntLinkedList {
 
+public class IntLinkedList {
+	/*
+	 *Class for creating and managing linked list with functionalities like:
+	 *push - put at new last node
+	 *isEmpty - checking if list is empty
+	 *isFull - checking if list is Full
+	 *top - returning the last element without deleting it
+	 *pop - returning the last element and deleting it
+	 */
     private static final int FALSE = -1;
     private Node last;
     private int i;
