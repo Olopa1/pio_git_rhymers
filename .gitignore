@@ -1,0 +1,7 @@
+#Ignored files and directoreis
+/.settings
+/target
+.classpath
+*.xml
+.project
+/.idea
