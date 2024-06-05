@@ -3,7 +3,7 @@ package edu.kis.vh.nursery.list;
 
 public class IntLinkedList {
 	/*
-	 *Class for creating and managin linked list with funcionalities like:
+	 *Class for creating and managing linked list with functionalities like:
 	 *push - put at new last node
 	 *isEmpty - checking if list is empty
 	 *isFull - checking if list is Full
